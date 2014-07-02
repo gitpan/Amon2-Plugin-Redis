@@ -1,9 +1,10 @@
 ---
-abstract: "It's new $module"
+abstract: 'for enabling it to treat simply'
 author:
   - 'meru_akimbo <merukatoruayu0@gmail.com>'
 build_requires:
   Test::More: '0.98'
+  Test::RedisServer: '0.14'
 configure_requires:
   Module::Build::Tiny: '0.035'
 dynamic_config: 0
@@ -26,7 +27,7 @@ no_index:
 provides:
   Amon2::Plugin::Redis:
     file: lib/Amon2/Plugin/Redis.pm
-    version: '0.02'
+    version: '0.03'
 requires:
   Redis: v1.9.74
   perl: '5.008001'
@@ -34,4 +35,4 @@ resources:
   bugtracker: https://github.com/meru-akimbo/Amon2-Plugin-Redis/issues
   homepage: https://github.com/meru-akimbo/Amon2-Plugin-Redis
   repository: git://github.com/meru-akimbo/Amon2-Plugin-Redis.git
-version: '0.02'
+version: '0.03'

@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "for enabling it to treat simply",
    "author" : [
       "meru_akimbo <merukatoruayu0@gmail.com>"
    ],
@@ -48,14 +48,15 @@
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "Test::More" : "0.98",
+            "Test::RedisServer" : "0.14"
          }
       }
    },
    "provides" : {
       "Amon2::Plugin::Redis" : {
          "file" : "lib/Amon2/Plugin/Redis.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       }
    },
    "release_status" : "stable",
@@ -69,5 +70,5 @@
          "web" : "https://github.com/meru-akimbo/Amon2-Plugin-Redis"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
