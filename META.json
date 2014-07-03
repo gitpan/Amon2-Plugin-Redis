@@ -42,21 +42,23 @@
       },
       "runtime" : {
          "requires" : {
-            "Redis" : "v1.9.74",
+            "Redis" : "0",
             "perl" : "5.008001"
          }
       },
       "test" : {
          "requires" : {
+            "Amon2" : "0",
             "Test::More" : "0.98",
-            "Test::RedisServer" : "0.14"
+            "Test::RedisServer" : "0",
+            "parent" : "0"
          }
       }
    },
    "provides" : {
       "Amon2::Plugin::Redis" : {
          "file" : "lib/Amon2/Plugin/Redis.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       }
    },
    "release_status" : "stable",
@@ -70,5 +72,5 @@
          "web" : "https://github.com/meru-akimbo/Amon2-Plugin-Redis"
       }
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }
